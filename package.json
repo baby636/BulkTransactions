@@ -10,7 +10,9 @@
     "deploy": "npx oz deploy --skip-compile",
     "test": "npm run compile && mocha --exit --timeout 0 test/*-test.js",
     "lint": "eslint --ext .js,.ts ./; npx solhint **/*.sol",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -24,15 +26,15 @@
   "homepage": "https://github.com/gitcoinco/BulkTransactions#readme",
   "devDependencies": {
     "@openzeppelin/cli": "^2.8.2",
-    "@openzeppelin/contracts": "^3.1.0",
+    "@openzeppelin/contracts": "^3.4.0",
     "@openzeppelin/test-environment": "^0.1.4",
-    "@openzeppelin/test-helpers": "^0.5.6",
+    "@openzeppelin/test-helpers": "^0.5.10",
     "chai": "^4.2.0",
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-chai-friendly": "^0.6.0",
     "eslint-plugin-import": "^2.22.0",
-    "ganache-core": "^2.11.3-beta.0",
+    "ganache-core": "^2.13.0",
     "mocha": "^8.1.2",
     "prettier": "^2.1.0",
     "prettier-plugin-solidity": "^1.0.0-alpha.56",
@@ -40,6 +42,8 @@
   },
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.0.42",
-    "dotenv": "^8.2.0"
-  }
+    "dotenv": "^8.2.0",
+    "snyk": "^1.606.0"
+  },
+  "snyk": true
 }
