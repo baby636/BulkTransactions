@@ -33,7 +33,7 @@
     "eslint-plugin-chai-friendly": "^0.6.0",
     "eslint-plugin-import": "^2.22.0",
     "ganache-core": "^2.11.3-beta.0",
-    "mocha": "^8.1.2",
+    "mocha": "^10.6.0",
     "prettier": "^2.1.0",
     "prettier-plugin-solidity": "^1.0.0-alpha.56",
     "solhint": "^3.2.0"
